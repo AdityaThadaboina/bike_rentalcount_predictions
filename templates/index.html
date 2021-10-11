@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static',filename='favicon.ico')}}">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>House Price Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+</head>
+
+<div class="hed">
+    <h1>BIKE RENTAL COUNT PREDICTION</h1>
+</div>
+<body>
+    
+   <img src="/static/bike.jpg" alt="">
+    <p class="pl">Please Enter Each and Every value for Prediction</p>
+    
+    <div class="frm">  
+        <form action="/predict" method="POST">
+            
+            <p class="mo">Month : </p><br>
+            <input type="text" id="part" name="mon" placeholder="Enter number (1-12)"><br>
+
+            <p class="ye">Year : </p><br>
+            <input type="text" name="year" id="part1" placeholder="Enter the Year"><br>
+
+            <p class="wdy">Weekday : </p><br>
+            <div id="wkd">
+            <h4>
+            <input type="radio" name="wd"  value=0>Sunday &ensp;
+            <input type="radio" name="wd"  value=1>Monday &ensp; 
+            <input type="radio" name="wd"  value=2>Tuesday &ensp;
+            <input type="radio" name="wd"  value=3>Wednesday&ensp;
+            <input type="radio" name="wd"  value=4>Thursday &ensp;
+            <input type="radio" name="wd"  value=5>Friday &ensp;
+            <input type="radio" name="wd"  value=6>Saturday 
+            </h4>
+            </div>
+
+            <p class="hd">Is today a Holiday? : </p><br>
+            <div id="holi">
+            <h4>
+            <input type="radio" name="hol"  value=0>No &ensp;
+            <input type="radio" name="hol"  value=1>Yes
+            </h4> 
+            </div>
+
+            <p class="wod">Is today a Working day? : </p><br>
+            <div id="wor">
+            <h4>
+            <input type="radio" name="wekd"  value=0>No &ensp;
+            <input type="radio" name="wekd"  value=1>Yes
+            </h4>
+            </div>
+
+            <p class="ss">Which season is going on? : </p><br>
+            <div id="so">
+            <h4>
+            <input type="radio" name="sea"  value=0>Spring &ensp;
+            <input type="radio" name="sea"  value=1>Summer &ensp;
+            <input type="radio" name="sea"  value=2>Rainy &ensp;
+            <input type="radio" name="sea"  value=3>Winter 
+            </h4>
+            </div>
+
+            <p class="wsi">Today's Weather Situation : </p> <br>
+            <div class="op">
+            <h4>
+            <input type="radio" name="ws"  value=1>Clear,Partly cloudy &ensp;
+            <input type="radio" name="ws"  value=2>Mist + Cloudy &ensp;
+            <input type="radio" name="ws"  value=3>Light Rain or Snow &ensp;
+            <input type="radio" name="ws"  value=4>Heavy Rain
+            </h4> 
+            </div>
+
+            <p class="t">Temperature : </p><br>
+            <input type="text" name="temp" id="part7" placeholder="In Celsius"><br>
+
+            <p class="h">Humidity : </p><br>
+            <input type="text" name="hum" id="part8" placeholder="In Percentage"><br>
+
+            <p class="w">Windspeed : </p><br>
+            <input type="text" name="sp" id="part9" placeholder="In kmph"><br>
+            
+            <button   class="btn btn-info" >Predict</button>
+            
+            
+        </form>
+    </div>
+    
+    <div class="row" >
+        {% if prediction %}
+        <h2 >{{prediction}} bikes may be booked today!</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

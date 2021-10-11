@@ -1,0 +1,223 @@
+img
+{
+  position: absolute;
+  
+  opacity: 0.5;
+  width: 100%;
+}
+.frm
+{
+    position: relative;
+    
+}
+
+
+h1
+{
+
+  text-align: center;
+  font-size: 500%;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-weight: bolder;
+  margin: 0;
+}
+p
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 150%;
+  font-weight: bolder;
+}
+.hed
+{
+    text-align: center;
+    height: 600%;
+    background-color:rgb(236, 236, 14);
+    margin: 0 0 0 0 ;
+
+}
+
+.mo
+{
+  position: absolute;
+  top: 12%;
+  left: 25%;
+}
+
+
+#part
+{
+  position: absolute;
+  top: 13%;
+  left: 32%;
+  
+}
+
+.ye
+{
+  position: absolute;
+  top: 12%;
+  left: 55%;
+}
+
+#part1
+{
+  position: absolute;
+  top: 13%;
+  left: 60.5%;
+}
+
+.wdy
+{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+#wkd
+{
+  position: absolute;
+  top: 32.8%;
+  left: 34%;
+}
+
+.hd
+{
+  position: absolute;
+  top: 48%;
+  left: 25%;
+}
+
+#holi
+{
+  position: absolute;
+  top: 50.8%;
+  left: 42%;
+}
+
+.wod
+{
+  position: absolute;
+  top:48%;
+  left: 55%;
+}
+
+#wor
+{
+  position: absolute;
+  top: 50.8%;
+  left: 76.3%;
+}
+
+.ss
+{
+  position: absolute;
+  top: 66%;
+  left: 25%;
+}
+
+#so
+{
+  position: absolute;
+  top: 68.7%;
+  left: 48.5%;
+}
+
+
+.wsi
+{
+  position: absolute;
+  top: 84%;
+  left: 25%;
+}
+
+.op
+{
+  position: absolute;
+  top: 86.6%;
+  left: 48%;
+}
+
+.t
+{
+  position: absolute;
+  top: 102%;
+  left: 25%;
+}
+
+#part7
+{
+  position: absolute;
+  top: 103%;
+  left: 37.5%;
+
+    
+}
+
+.h
+{
+  position: absolute;
+  top: 120%;
+  left: 25%;
+}
+
+#part8
+{
+  position: absolute;
+  top: 121%;
+  left: 34%;
+}
+
+.w
+{
+  position: absolute;
+  top: 110%;
+  left: 55%;
+}
+
+#part9
+{
+  position: absolute; 
+  top: 111%;
+  left: 66%;
+}
+
+.btn
+{
+  position: absolute;
+  top: 140%;
+  left: 50%;
+}
+
+.pl
+{
+  text-align: center;
+  font-size: 280%;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.row
+{
+  position: absolute;
+  top: 22%;
+  left: 33%;
+  margin: 0;
+  opacity: 1;
+  text-align: center;
+  color:rgb(3, 146, 182);
+  
+}
+h4
+{
+  font-size: 110%;
+  font-weight: 400;
+  font-family: cursive;
+}
+
+h2
+{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 200%;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+  font-weight: bolder;
+}
